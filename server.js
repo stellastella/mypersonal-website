@@ -9,7 +9,7 @@ app.set('view engine', 'html')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-require('./routes/index')(app);
+require('./server/routes/index')(app);
 
 app.listen(port, () => {
   console.log('Listening on port', port);
